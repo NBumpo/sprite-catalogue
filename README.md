@@ -1,7 +1,9 @@
 
 # __Sprite Catalogue__
 
- Sprite Catalogue is an app for sharing Sprites you've designed. 
+ Sprite Catalogue is an app for sharing Sprites you've designed.
+
+ A sprite is a two-dimensional bitmap that is integrated into a larger scene, most often in a 2D video game.
 
 
 
@@ -30,9 +32,9 @@ HTML, CSS, JavaScript, Node.js, Express, MongoDB, Mongoose, and React were used 
     
 
 ## Potential Future Enhancements
-1. 
-2. 
-3. 
-4. 
+1. Profile Page
+2. A way to group designs together for projects
+3. A most popular page
+
 
     
