@@ -1,0 +1,208 @@
+* {
+  margin: none;
+  padding: none;
+  font-family: Gabarito;
+}
+
+
+body {
+  background-color: #fffeff;
+  
+}
+
+
+
+h1 {
+  
+  max-width: 92%;
+  margin: auto 3% auto 3%;
+  font-size:  3em;
+  color: white;
+  background-image: linear-gradient(to right, rgb(10, 211, 179) 30%, rgb(239, 169, 227));
+  padding: 0.3em;
+  
+  border-radius: 0 0 30px 30px;
+  font-family: 'Potta One', 'Arial Narrow', Arial, sans-serif, monospace;
+  text-align: center;
+  /* -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white; */
+  /* background-clip:content-box;
+  -webkit-background-clip: content-box; */
+}
+
+header {
+  width: 90%;
+  background-color: rgb(191, 188, 188);
+  border-radius: 30px 30px 0 0;
+  margin: auto;
+  padding: 2%;
+   background-clip:padding-box;
+  -webkit-background-clip: padding-box; 
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.headerlink {
+  padding: 15px 35px 15px 35px;
+  text-decoration: none;
+  
+    background-clip:padding-box;
+  -webkit-background-clip: padding-box; 
+  border-radius: 15px;
+  color: white;
+  font-size: larger;
+  font-family: 'Overpass', 'Arial Narrow', Arial, sans-serif, monospace;
+  font-weight: bold;
+  border: solid 5px white;
+  transition: 0.4s;
+}
+
+.headerlink:visited {
+  text-decoration: none;
+ 
+}
+
+.headerlink:hover {
+  background-color: #0ad3b3;
+}
+
+
+.logoutlink:hover {
+  background-color: #ff1c7e;
+}
+
+.formwrapper {
+  margin: 0 20%;
+}
+
+form {
+  margin: 5% 0 0 0;
+
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0 25px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+input:hover {
+  box-shadow: 10px 10px #0ad3b3;
+
+}
+
+
+input:focus{
+  outline: 2px solid #0ad3b3;     
+}
+
+.addspritesubmit {
+  margin: 20px 0 0 40%;
+  padding: 10px 50px 10px 50px;
+  display: block;
+  color: #0ad3b3;
+  border: solid 4px #0ad3b3;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.addspritesubmit:hover {
+  
+  background-image: linear-gradient(to right, #efa9e3 30%, #f8609a);
+  color: white;
+  border: solid 4px white;
+}
+
+
+.addspriteselect {
+  margin: 10px 0 0 0;
+  padding: 10px 50px 10px 10px;
+  transition: 0.4s;
+  border-radius: 7px;
+}
+
+.addspriteselect:focus {
+  outline: 2px solid #0ad3b3;     
+}
+
+.addspriteselect:hover {
+  box-shadow: 10px 10px #0ad3b3;
+}
+
+
+.choosefilebtn::file-selector-button {
+  
+  background-color: rgb(113, 111, 111, 0.5);
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  transition: 0.3s;
+
+}
+
+.choosefilebtn::file-selector-button:hover {
+  background-color: #0ad3b3;
+
+
+
+
+}
+
+.feed {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.spritepostcard {
+  width: 30%;
+  background-color:rgb(113, 111, 111, 0.5);
+  border-radius: 25px;
+  /* border: solid 5px rgb(113, 111, 111, 0.5); */
+  margin: 1% 1% 1% 2%;
+  text-align: center;
+ font-family: Gabarito;
+}
+
+.spritepostcard h2 {
+  font-size: 3em;
+  
+}
+
+.spritecardimg {
+  width: 100%;
+}
+
+.carddeletebutton, .loginsignupbtn {
+  margin: 20px auto auto auto;
+  padding: 10px 50px 10px 50px;
+  display: block;
+  color: #0ad3b3;
+  border: solid 4px #0ad3b3;
+  font-weight: bolder;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+
+.carddeletebutton:hover, .loginsignupbtn:hover{
+  
+  background-image: linear-gradient(to right, #efa9e3 30%, #f8609a);
+  color: white;
+  border: solid 4px white;
+}
+
+.loginsignupswitch {
+  text-align: center;
+  margin-top: 30px;
+}
