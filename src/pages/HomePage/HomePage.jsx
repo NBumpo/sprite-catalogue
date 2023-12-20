@@ -62,19 +62,19 @@ export default function HomePage({ loggedUser, handleLogout }) {
 
 
 
-        return (
+    return (
 
-            <main>
-                <PageHeader handleLogout={handleLogout} loggedUser={loggedUser} />
+        <main>
+            <PageHeader handleLogout={handleLogout} loggedUser={loggedUser} />
 
-                <h1>HOME</h1>
-
-
-                <SpritePostFeed posts={posts} deletePost={deletePost} />
-            </main>
-
-        )
+            <h1>HOME</h1>
 
 
+            <SpritePostFeed posts={posts} deletePost={deletePost} />
+        </main>
 
-    }
+    )
+
+
+
+}

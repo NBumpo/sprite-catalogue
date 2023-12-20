@@ -9,8 +9,6 @@ import AddSpritePage from './pages/AddSpritePage/AddSpritePage';
 
 import userService from "./utils/userService";
 
-
-
 export default function App() {
   const [user, setUser] = useState(userService.getUser())
 
@@ -38,19 +36,13 @@ export default function App() {
 
       </Routes>
 
-
-
-
     )
   }
 
-
-
-
   return (
     <Routes>
-      <Route path="/" element={<HomePage loggedUser={user} handleLogout={logout} handleSignUpOrLogin={handleSignUpOrLogin}/>} />
-      <Route path="/addsprite" element={<AddSpritePage loggedUser={user} handleLogout={logout} handleSignUpOrLogin={handleSignUpOrLogin}/>} />
+      <Route path="/" element={<HomePage loggedUser={user} handleLogout={logout} handleSignUpOrLogin={handleSignUpOrLogin} />} />
+      <Route path="/addsprite" element={<AddSpritePage loggedUser={user} handleLogout={logout} handleSignUpOrLogin={handleSignUpOrLogin} />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

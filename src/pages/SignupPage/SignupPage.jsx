@@ -12,14 +12,10 @@ import userService from '../../utils/userService';
 function SignUpPage({ handleSignUpOrLogin }) {
 
     const [state, setState] = useState({
-
-        
         email: '',
         password: '',
         passwordConf: '',
         bio: '',
-
-
     })
 
     const [photo, setPhoto] = useState('')
@@ -46,13 +42,13 @@ function SignUpPage({ handleSignUpOrLogin }) {
 
             navigate('/')
 
-        } catch(err) {
+        } catch (err) {
             console.log(err.message)
             setError('Try signing up again')
         }
     }
 
-    function handleChange(e){
+    function handleChange(e) {
         setState({
             ...state,
             [e.target.name]: e.target.value
@@ -67,23 +63,23 @@ function SignUpPage({ handleSignUpOrLogin }) {
 
     return (
         <>
-        <main>
-            <h1>Signup Page</h1>
-            <section className="formwrapper">
-            <form onSubmit={handleSubmit}>
-                <input type='email' placeholder='Email' name='email' value={state.email} onChange={handleChange} required/>
-                <input type='password' placeholder='Password' name='password' value={state.password} onChange={handleChange} required></input>
-                <input type='passwordConf' placeholder='Confirm Password' name='passwordConf' value={state.passwordConf} onChange={handleChange} required></input>
-                <textarea label='bio' name='bio' placeholder='Bio' onChange={handleChange}></textarea>
-                <input type='file' name='photo' placeholder='Upload Image' onChange={handleFileInput}></input>
-                <button type="submit" className="loginsignupbtn">Sign Up</button>
+            <main>
+                <h1>Signup Page</h1>
+                <section className="formwrapper">
+                    <form onSubmit={handleSubmit}>
+                        <input type='email' placeholder='Email' name='email' value={state.email} onChange={handleChange} required />
+                        <input type='password' placeholder='Password' name='password' value={state.password} onChange={handleChange} required></input>
+                        <input type='passwordConf' placeholder='Confirm Password' name='passwordConf' value={state.passwordConf} onChange={handleChange} required></input>
+                        <textarea label='bio' name='bio' placeholder='Bio' onChange={handleChange}></textarea>
+                        <input type='file' name='photo' placeholder='Upload Image' onChange={handleFileInput}></input>
+                        <button type="submit" className="loginsignupbtn">Sign Up</button>
 
-                
-                {error ? <ErrorMessage error={error} /> : null}
-            </form>
-            </section>
-            <div className='loginsignupswitch'>Already a User? <Link to="/login">Login</Link></div>
-        </main>
+
+                        {error ? <ErrorMessage error={error} /> : null}
+                    </form>
+                </section>
+                <div className='loginsignupswitch'>Already a User? <Link to="/login">Login</Link></div>
+            </main>
         </>
     )
 }

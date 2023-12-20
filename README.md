@@ -6,14 +6,7 @@
  A sprite is a two-dimensional bitmap that is integrated into a larger scene, most often in a 2D video game.
 
 
-
-
-
-
-
 ## Screenshots
-
-
 
 ![Sprite Catalogue Home page](https://imgur.com/NJttJoU.png)  
 

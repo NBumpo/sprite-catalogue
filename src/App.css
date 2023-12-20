@@ -20,7 +20,7 @@ h1 {
   color: white;
   background-image: linear-gradient(to right, rgb(10, 211, 179) 30%, rgb(239, 169, 227));
   padding: 0.3em;
-  
+  transition: 0.4s;
   border-radius: 0 0 30px 30px;
   font-family: 'Potta One', 'Arial Narrow', Arial, sans-serif, monospace;
   text-align: center;
